@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="Y6W-OH-hqX" customClass="SecondViewController" customModule="Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TE AMO ARI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn0-8N-L3s">
+                                <rect key="frame" x="160.5" y="437.5" width="93" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-JB-Kwk">
+                                <rect key="frame" x="130" y="525" width="154" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ck6-yJ-Dz4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Push"/>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yrU-bG-RM1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8E-eJ-5zj">
+                                <rect key="frame" x="130" y="600" width="154" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f8f-TG-jbP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Modal"/>
+                                <connections>
+                                    <action selector="modalButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QQP-qd-Esx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="1" green="0.79245941407507436" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j8E-eJ-5zj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4TH-dz-PEa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j8E-eJ-5zj" secondAttribute="trailing" constant="130" id="4bX-PM-1zt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="j8E-eJ-5zj" secondAttribute="bottom" constant="212" id="6Yt-9j-DBK"/>
+                            <constraint firstItem="j8E-eJ-5zj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="130" id="9TB-LQ-nKl"/>
+                            <constraint firstItem="tKA-JB-Kwk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="130" id="NGb-vy-fIr"/>
+                            <constraint firstItem="Mn0-8N-L3s" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YVj-Uk-Twm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tKA-JB-Kwk" secondAttribute="trailing" constant="130" id="imM-OY-5l9"/>
+                            <constraint firstItem="j8E-eJ-5zj" firstAttribute="top" secondItem="tKA-JB-Kwk" secondAttribute="bottom" constant="25" id="n5G-QM-sE6"/>
+                            <constraint firstItem="tKA-JB-Kwk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tGs-Tu-wkE"/>
+                            <constraint firstItem="Mn0-8N-L3s" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="zYx-IT-A2q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="62"/>
+        </scene>
+    </scenes>
+</document>
